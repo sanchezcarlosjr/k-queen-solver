@@ -1,0 +1,26 @@
+{
+  "hosting": {
+    "public": "public",
+    "site": "kqueensolver",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [ {
+    	"source": "**/*.@(wasm)",
+    	"headers": [ {
+      		"key": "Content-Type",
+      		"value": "application/wasm"
+    		} 
+	]
+  	} 
+    ]
+  }
+}

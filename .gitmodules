@@ -1,0 +1,3 @@
+[submodule "queen-solver/clang-wasm"]
+	path = queen-solver/clang-wasm
+	url = git@github.com:PetterS/clang-wasm.git
